@@ -43,14 +43,17 @@
             ];
     employees.forEach(obj => {
         const li = document.createElement("li");
+        obj['isfavorite'] = false
         li.innerHTML = obj.name;
         faveEmployees.append(li);
-    }
-
-
-    )
+    })
    
-    //faveEmployees.addEventListener("click", ev => )
+    faveEmployees.addEventListener("click", ev =>{
+        employees.isfavorite = !employees.isfavorite
+        employees.filter((element, idx) =>{
+           return idx
+        })
+    })
     
     </script>
     </body>
